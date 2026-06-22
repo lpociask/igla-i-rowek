@@ -35,6 +35,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -127,8 +128,8 @@ a {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(14, 12, 10, 0.96) 0%, rgba(14, 12, 10, 0.84) 33%, rgba(14, 12, 10, 0.38) 68%, rgba(14, 12, 10, 0.72) 100%),
-    linear-gradient(180deg, rgba(14, 12, 10, 0.08), var(--vinyl) 92%);
+    linear-gradient(90deg, rgba(14, 12, 10, 0.91) 0%, rgba(14, 12, 10, 0.68) 33%, rgba(14, 12, 10, 0.08) 68%, rgba(14, 12, 10, 0.28) 100%),
+    linear-gradient(180deg, rgba(14, 12, 10, 0.03), rgba(14, 12, 10, 0.13) 56%, var(--vinyl) 96%);
   pointer-events: none;
 }
 
@@ -238,6 +239,7 @@ h3 {
   position: absolute;
   overflow: hidden;
   width: 17.2rem;
+  aspect-ratio: 553 / 1200;
   margin: 0;
   border: 0.55rem solid #0a0908;
   border-radius: 2rem;
@@ -247,55 +249,142 @@ h3 {
 
 .phone img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1.4rem;
 }
 
 .phone-main {
-  top: 5.3rem;
-  right: max(1rem, calc((100% - var(--page-max)) / 2 + 9rem));
-  width: 20rem;
+  top: 4.7rem;
+  right: max(1rem, calc((100% - var(--page-max)) / 2 + 6rem));
+  width: 22.4rem;
 }
 
 .phone-secondary {
-  top: 10rem;
-  right: max(1rem, calc((100% - var(--page-max)) / 2 - 1rem));
+  top: 8.6rem;
+  right: max(1rem, calc((100% - var(--page-max)) / 2 - 2.5rem));
+  width: 17.8rem;
   transform: rotate(5deg);
-  opacity: 0.88;
+  opacity: 0.96;
 }
 
 .phone-third {
-  top: 20rem;
-  right: max(1rem, calc((100% - var(--page-max)) / 2 + 24rem));
-  width: 13.4rem;
+  top: 19rem;
+  right: max(1rem, calc((100% - var(--page-max)) / 2 + 25rem));
+  width: 14.6rem;
   transform: rotate(-7deg);
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
-.quick-strip {
+.hero-marek {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  width: min(35rem, 100%);
+  margin: 1.35rem 0 0;
+  padding: 0.55rem;
+  border: 1px solid rgba(232, 221, 174, 0.2);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(199, 145, 69, 0.22), rgba(13, 89, 95, 0.14)),
+    rgba(14, 12, 10, 0.52);
+  box-shadow: 0 1rem 2.6rem rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(14px);
+}
+
+.hero-marek img {
+  width: 100%;
+  height: 5.35rem;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero-marek figcaption {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.hero-marek strong {
+  color: var(--paper-bright);
+  font-size: 0.98rem;
+}
+
+.hero-marek span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.ritual-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  background: rgba(232, 221, 174, 0.12);
+  gap: 1rem;
+  padding: 1.2rem max(1.25rem, calc((100% - var(--page-max)) / 2));
+  background:
+    linear-gradient(90deg, rgba(13, 89, 95, 0.2), rgba(199, 145, 69, 0.14), rgba(184, 93, 42, 0.12)),
+    rgba(9, 8, 7, 0.72);
   border-bottom: 1px solid var(--line);
 }
 
-.quick-strip div {
-  min-height: 7.5rem;
-  padding: 1.4rem;
-  background: rgba(21, 18, 13, 0.9);
+.ritual-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.4rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: center;
+  min-height: 10.5rem;
+  overflow: hidden;
+  padding: 1rem;
+  border: 1px solid rgba(232, 221, 174, 0.16);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 0 0, rgba(199, 145, 69, 0.16), transparent 48%),
+    linear-gradient(180deg, rgba(32, 27, 18, 0.94), rgba(13, 89, 95, 0.16));
+  box-shadow: inset 0 1px 0 rgba(255, 247, 210, 0.05);
 }
 
-.quick-strip strong {
+.ritual-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 1rem 0;
+  height: 0.18rem;
+  background: linear-gradient(90deg, var(--brass-strong), var(--teal), var(--clay));
+  opacity: 0.76;
+}
+
+.ritual-card img {
+  width: 100%;
+  aspect-ratio: 553 / 1200;
+  object-fit: cover;
+  border: 0.22rem solid #0a0908;
+  border-radius: 0.95rem;
+  background: #0a0908;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3);
+}
+
+.ritual-number {
+  display: inline-flex;
+  margin-bottom: 0.4rem;
+  color: var(--brass-strong);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.ritual-card h3 {
   display: block;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
   color: var(--paper-bright);
-  font-size: 1.05rem;
+  font-size: 1.02rem;
 }
 
-.quick-strip span {
+.ritual-card p {
+  margin: 0;
   color: var(--muted);
-  line-height: 1.45;
+  font-size: 0.9rem;
+  line-height: 1.48;
 }
 
 .band {
@@ -348,7 +437,10 @@ h3 {
 
 .feature-card {
   min-height: 15rem;
+  position: relative;
+  overflow: hidden;
   padding: 1.25rem;
+  box-shadow: inset 0 1px 0 rgba(255, 247, 210, 0.05);
 }
 
 .feature-card img {
@@ -357,6 +449,7 @@ h3 {
   object-fit: cover;
   margin-bottom: 1rem;
   border-radius: 8px;
+  filter: saturate(1.08) contrast(1.03);
 }
 
 .feature-card h3 {
@@ -365,21 +458,58 @@ h3 {
 
 .story {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 2.4rem;
+  grid-template-columns: minmax(13rem, 0.62fr) minmax(0, 1.38fr);
+  gap: 3rem;
   align-items: center;
 }
 
 .story-visual {
   overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: var(--panel);
+  width: min(100%, 21rem);
+  aspect-ratio: 553 / 1200;
+  justify-self: center;
+  border: 0.55rem solid #0a0908;
+  border-radius: 2rem;
+  background: #0a0908;
+  box-shadow: 0 1.4rem 3rem rgba(0, 0, 0, 0.32);
 }
 
 .story-visual img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 1.35rem;
+}
+
+.story-copy {
+  max-width: 45rem;
+}
+
+.story-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.35rem 0 1.55rem;
+}
+
+.story-notes article {
+  padding: 0.95rem;
+  border: 1px solid rgba(232, 221, 174, 0.16);
+  border-radius: 8px;
+  background: rgba(232, 221, 174, 0.06);
+}
+
+.story-notes strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--paper-bright);
+  font-size: 0.94rem;
+}
+
+.story-notes span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .check-list {
@@ -403,7 +533,7 @@ h3 {
 .screen-rail {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(15.5rem, 18rem);
+  grid-auto-columns: minmax(19rem, 21.5rem);
   gap: 1.05rem;
   overflow-x: auto;
   padding: 0.35rem 0 1.2rem;
@@ -417,6 +547,7 @@ h3 {
 .screen-card figure {
   margin: 0 0 0.95rem;
   overflow: hidden;
+  aspect-ratio: 553 / 1200;
   border: 0.46rem solid #0a0908;
   border-radius: 1.9rem;
   background: #0a0908;
@@ -425,6 +556,8 @@ h3 {
 
 .screen-card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1.35rem;
 }
 
@@ -537,24 +670,24 @@ h3 {
   }
 
   .phone-main {
-    right: -1rem;
+    right: -0.6rem;
     top: 10rem;
-    width: 15rem;
-    opacity: 0.72;
+    width: 16rem;
+    opacity: 0.82;
   }
 
   .phone-secondary {
-    right: 11rem;
+    right: 11.5rem;
     top: 18rem;
-    width: 12.4rem;
-    opacity: 0.42;
+    width: 13rem;
+    opacity: 0.6;
   }
 
   .phone-third {
     display: none;
   }
 
-  .quick-strip,
+  .ritual-strip,
   .feature-grid,
   .story,
   .privacy-panel,
@@ -562,8 +695,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .quick-strip {
-    gap: 0;
+  .ritual-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -598,10 +731,10 @@ h3 {
   }
 
   .phone-main {
-    right: -3.5rem;
+    right: -3rem;
     top: 15rem;
     width: 14rem;
-    opacity: 0.38;
+    opacity: 0.52;
   }
 
   .phone-secondary {
@@ -614,8 +747,20 @@ h3 {
     flex-direction: column;
   }
 
+  .hero-marek {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-marek img {
+    height: min(12rem, 48vw);
+  }
+
   .button {
     width: 100%;
+  }
+
+  .ritual-strip {
+    grid-template-columns: 1fr;
   }
 
   .band {
@@ -623,11 +768,15 @@ h3 {
     padding-bottom: 4rem;
   }
 
+  .story-notes {
+    grid-template-columns: 1fr;
+  }
+
   .check-list {
     grid-template-columns: 1fr;
   }
 
   .screen-rail {
-    grid-auto-columns: minmax(13.6rem, 78%);
+    grid-auto-columns: minmax(16.8rem, 84%);
   }
 }
