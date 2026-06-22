@@ -1,0 +1,37 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Igla i Rowek app mark</title>
+  <desc>Text-light app icon mark based on vinyl grooves, brass label, teal tonearm, and a stylus touching the groove.</desc>
+  <defs>
+    <radialGradient id="vinylIcon" cx="50%" cy="44%" r="58%">
+      <stop offset="0%" stop-color="#241E16"/>
+      <stop offset="60%" stop-color="#0F0E0B"/>
+      <stop offset="100%" stop-color="#030303"/>
+    </radialGradient>
+    <linearGradient id="labelIcon" x1="298" y1="260" x2="726" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2C56D"/>
+      <stop offset="45%" stop-color="#C79145"/>
+      <stop offset="100%" stop-color="#71471F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="#0E0C0A"/>
+  <circle cx="512" cy="512" r="406" fill="url(#vinylIcon)"/>
+  <circle cx="512" cy="512" r="370" stroke="#E6D08A" stroke-opacity="0.28" stroke-width="8"/>
+  <circle cx="512" cy="512" r="328" stroke="#0D595F" stroke-opacity="0.82" stroke-width="10"/>
+  <circle cx="512" cy="512" r="282" stroke="#E6D08A" stroke-opacity="0.11" stroke-width="4"/>
+  <circle cx="512" cy="512" r="238" stroke="#E6D08A" stroke-opacity="0.10" stroke-width="4"/>
+  <circle cx="512" cy="512" r="194" stroke="#E6D08A" stroke-opacity="0.09" stroke-width="4"/>
+  <circle cx="512" cy="512" r="160" fill="url(#labelIcon)"/>
+  <circle cx="512" cy="512" r="118" fill="#E8DDAE" opacity="0.88"/>
+  <circle cx="512" cy="512" r="27" fill="#171008"/>
+  <circle cx="512" cy="512" r="10" fill="#EBD884"/>
+
+  <g transform="rotate(26 748 276)">
+    <circle cx="748" cy="276" r="66" fill="#0E0C0A" stroke="#C79145" stroke-width="13"/>
+    <circle cx="748" cy="276" r="26" fill="#0D595F" stroke="#E2C56D" stroke-width="7"/>
+    <rect x="356" y="258" width="374" height="24" rx="12" fill="#D8C27A"/>
+    <rect x="340" y="239" width="72" height="62" rx="15" fill="#0D595F" stroke="#E2C56D" stroke-width="8"/>
+    <path d="M340 289L302 333" stroke="#E2C56D" stroke-width="12" stroke-linecap="round"/>
+    <path d="M302 333L287 374" stroke="#E8DDAE" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

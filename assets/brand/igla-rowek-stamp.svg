@@ -1,0 +1,62 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Igla i Rowek analog stamp logo</title>
+  <desc>Analog stamp logo with vinyl grooves, brass label, I&amp;R monogram, and a tonearm needle touching the groove.</desc>
+  <defs>
+    <radialGradient id="vinyl" cx="50%" cy="44%" r="58%">
+      <stop offset="0%" stop-color="#231D15"/>
+      <stop offset="55%" stop-color="#11100D"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="brass" x1="236" y1="204" x2="760" y2="824" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2C56D"/>
+      <stop offset="42%" stop-color="#C79145"/>
+      <stop offset="100%" stop-color="#6F451E"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="304" y1="262" x2="742" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1E2A6"/>
+      <stop offset="100%" stop-color="#C9A44F"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <circle cx="512" cy="512" r="468" fill="#0E0C0A"/>
+  <circle cx="512" cy="512" r="444" fill="url(#vinyl)" filter="url(#softShadow)"/>
+  <circle cx="512" cy="512" r="420" stroke="#E6D08A" stroke-opacity="0.34" stroke-width="5"/>
+  <circle cx="512" cy="512" r="394" stroke="#0D595F" stroke-opacity="0.72" stroke-width="6"/>
+  <circle cx="512" cy="512" r="360" stroke="#E6D08A" stroke-opacity="0.14" stroke-width="2"/>
+  <circle cx="512" cy="512" r="326" stroke="#E6D08A" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="512" cy="512" r="292" stroke="#E6D08A" stroke-opacity="0.11" stroke-width="2"/>
+  <circle cx="512" cy="512" r="258" stroke="#E6D08A" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="512" cy="512" r="224" stroke="#E6D08A" stroke-opacity="0.09" stroke-width="2"/>
+
+  <circle cx="512" cy="512" r="202" fill="url(#brass)"/>
+  <circle cx="512" cy="512" r="178" fill="url(#paper)" opacity="0.92"/>
+  <circle cx="512" cy="512" r="176" stroke="#20170D" stroke-opacity="0.24" stroke-width="3"/>
+
+  <path d="M314 360C372 318 438 296 512 296C586 296 652 318 710 360" stroke="#20170D" stroke-opacity="0.32" stroke-width="5" stroke-linecap="round"/>
+  <path d="M316 664C376 705 441 726 512 726C583 726 648 705 708 664" stroke="#20170D" stroke-opacity="0.32" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="512" y="496" text-anchor="middle" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="148" font-weight="900" letter-spacing="-8" fill="#171008">I&amp;R</text>
+  <text x="512" y="586" text-anchor="middle" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="850" letter-spacing="4.2" fill="#171008">IGŁA I ROWEK</text>
+  <text x="512" y="633" text-anchor="middle" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="760" letter-spacing="1.2" fill="#0D595F">IGŁĄ W ROWEK</text>
+
+  <circle cx="512" cy="512" r="26" fill="#171008"/>
+  <circle cx="512" cy="512" r="10" fill="#EBD884"/>
+
+  <g transform="rotate(25 736 279)">
+    <circle cx="736" cy="279" r="58" fill="#0E0C0A" stroke="#C79145" stroke-width="10"/>
+    <circle cx="736" cy="279" r="26" fill="#0D595F" stroke="#E2C56D" stroke-width="5"/>
+    <rect x="366" y="263" width="350" height="18" rx="9" fill="#D8C27A"/>
+    <rect x="384" y="267" width="322" height="8" rx="4" fill="#FFF0B3" opacity="0.55"/>
+    <rect x="314" y="246" width="70" height="52" rx="12" fill="#0D595F" stroke="#E2C56D" stroke-width="5"/>
+    <path d="M314 286L284 320" stroke="#E2C56D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M284 320L275 346" stroke="#E8DDAE" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <circle cx="362" cy="636" r="8" fill="#0D595F"/>
+  <circle cx="668" cy="390" r="8" fill="#0D595F"/>
+  <path d="M242 790C314 850 406 884 512 884C618 884 710 850 782 790" stroke="#C79145" stroke-opacity="0.60" stroke-width="8" stroke-linecap="round"/>
+  <path d="M222 240C294 166 394 124 512 124C630 124 730 166 802 240" stroke="#C79145" stroke-opacity="0.60" stroke-width="8" stroke-linecap="round"/>
+</svg>
