@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Igła i Rowek - analogowy dziennik odsłuchu</title>
-  <meta name="description" content="Igła i Rowek to local-first aplikacja iOS do prowadzenia dziennika odsłuchu winyli, kolekcji płyt, sprzętu audio, igieł i statystyk.">
+  <meta name="description" content="Igła i Rowek 1.5.1 to local-first aplikacja iOS do rozpoznawania winyla, importu Discogs, kolekcji płyt, sprzętu audio, igieł i statystyk.">
   <link rel="icon" href="../assets/brand/app-icon.png">
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -17,6 +17,7 @@
       </a>
       <nav class="nav-links" aria-label="Nawigacja">
         <a aria-current="page" href="./">Start</a>
+        <a href="#nowosci">Nowości</a>
         <a href="../privacy.html">Privacy</a>
         <a href="../support.html">Support</a>
         <a class="language" href="../">EN</a>
@@ -37,18 +38,19 @@
           </figure>
         </div>
         <div class="hero-copy">
-          <p class="release-note">Wersja 1.0 na iPhone</p>
+          <p class="release-note">Wersja 1.5.1 na iPhone</p>
           <h1 id="hero-title">Igła i Rowek</h1>
-          <p class="lead">Analogowy dziennik odsłuchu dla tych, którzy chcą wiedzieć nie tylko jaka płyta gra, ale też na jakim torze, z którą igłą i ile godzin ma już za sobą.</p>
+          <p class="lead">Analogowy dziennik odsłuchu dla tych, którzy chcą wiedzieć jaka płyta gra, czysto importować winyle z Discogs, dbać o cały tor audio i uczciwie liczyć godziny igły.</p>
           <div class="actions">
             <a class="button primary" href="https://apps.apple.com/pl/app/ig%C5%82a-i-rowek/id6782431440">Pobierz w App Store</a>
+            <a class="button secondary" href="#nowosci">Co nowego</a>
             <a class="button secondary" href="#ekrany">Zobacz ekrany</a>
           </div>
           <figure class="hero-marek">
             <img src="../assets/brand/marek-hero-brand.jpg" alt="Marek przy gramofonie" width="1400" height="788">
             <figcaption>
               <strong>Marek jest analogowym gospodarzem aplikacji.</strong>
-              <span>Trzyma klimat, a aplikacja pilnuje płyt, igieł, sprzętu i sesji odsłuchu.</span>
+              <span>Trzyma klimat, a aplikacja pilnuje płyt, igieł, kolumn, importów Discogs i sesji odsłuchu.</span>
             </figcaption>
           </figure>
         </div>
@@ -60,7 +62,7 @@
           <div>
             <span class="ritual-number">01</span>
             <h3>Teraz Gra</h3>
-            <p>Wybierz płytę, odpal timer i przypnij sesję do właściwej igły.</p>
+            <p>Wybierz płytę, odpal timer albo użyj opcjonalnego rozpoznawania winyla, gdy muzyka gra obok.</p>
           </div>
         </article>
         <article class="ritual-card">
@@ -68,7 +70,7 @@
           <div>
             <span class="ritual-number">02</span>
             <h3>Kolekcja</h3>
-            <p>Lokalna półka płyt, która wie co jest gotowe do grania i co wraca najczęściej.</p>
+            <p>Lokalna półka płyt z czystszym importem winyli z Discogs i bezpiecznym sprzątaniem.</p>
           </div>
         </article>
         <article class="ritual-card">
@@ -76,24 +78,54 @@
           <div>
             <span class="ritual-number">03</span>
             <h3>Sprzęt</h3>
-            <p>Gramofony, wkładki i igły są osobno, więc przebieg igły nie jest zgadywanką.</p>
+            <p>Gramofony, wkładki, igły, wzmacniacze i kolumny tworzą jeden paszport toru audio.</p>
           </div>
         </article>
         <article class="ritual-card">
-          <img src="../assets/screenshots/pl/screen-06.jpg" alt="" width="553" height="1200" loading="lazy">
+          <img src="../assets/screenshots/pl/screen-08.jpg" alt="" width="553" height="1200" loading="lazy">
           <div>
             <span class="ritual-number">04</span>
-            <h3>Statystyki</h3>
-            <p>Czas słuchania, ulubione płyty i zużycie igieł bez grzebania w tabelkach.</p>
+            <h3>Warsztat Marka</h3>
+            <p>Narzędzia opieki, czyszczenia i serwisowy kontekst są obok historii odsłuchu.</p>
           </div>
         </article>
+      </section>
+
+      <section class="band alt release-band" id="nowosci">
+        <div class="section-header">
+          <p class="eyebrow">Co nowego w 1.5.1</p>
+          <h2>Czystszy import, bezpieczniejsze porządki w kolekcji i spokojniejsze dane lokalne.</h2>
+          <p>Ta aktualizacja domyka fundament wersji 1.5: Discogs skupia się na winylach, usuwanie płyt sprząta powiązania, a aplikacja lepiej zachowuje się po pierwszej konfiguracji.</p>
+        </div>
+        <div class="release-grid" aria-label="Najważniejsze zmiany w wersji 1.5.1">
+          <article class="release-card">
+            <span>Discogs</span>
+            <h3>Tylko winyle</h3>
+            <p>Pozycje niewinylowe są pomijane i policzone, więc lokalna kolekcja zostaje płytowa.</p>
+          </article>
+          <article class="release-card">
+            <span>Tracklisty</span>
+            <h3>Czystsze pobieranie</h3>
+            <p>Tracklisty Discogs pobierają się tylko dla zaimportowanych wydań winylowych.</p>
+          </article>
+          <article class="release-card">
+            <span>Kolekcja</span>
+            <h3>Bezpieczne usuwanie</h3>
+            <p>Usunięcie płyty sprząta też odsłuchy, czyszczenia i historię rozpoznań.</p>
+          </article>
+          <article class="release-card">
+            <span>Local-first</span>
+            <h3>Porządek po starcie</h3>
+            <p>Dane demo dodają się tylko raz, a lokalizacje PL/EN dostały drobne poprawki.</p>
+          </article>
+        </div>
       </section>
 
       <section class="band" id="co-mamy">
         <div class="section-header">
           <p class="eyebrow">Co robi aplikacja</p>
           <h2>Łączy płytę, tor audio i realne zużycie igły.</h2>
-          <p>Igła i Rowek jest local-first: bez konta, bez presji, bez społecznościowego hałasu. To narzędzie do codziennego rytuału puszczania płyt i dbania o analogowy zestaw.</p>
+          <p>Igła i Rowek jest local-first: bez konta, bez presji, bez społecznościowego hałasu. To narzędzie do codziennego rytuału puszczania płyt, rozpoznawania tego co gra i dbania o analogowy zestaw.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
@@ -120,29 +152,29 @@
             <img src="../assets/screenshots/pl/screen-03.jpg" alt="Ekran aplikacji pokazujący odsłuch i kolekcję" width="554" height="1200" loading="lazy">
           </div>
           <div class="story-copy">
-            <p class="eyebrow">Wersja 1.0</p>
-            <h2>Gotowa baza pod poważne słuchanie.</h2>
+            <p class="eyebrow">Wersja 1.5.1</p>
+            <h2>Gotowa baza pod poważne słuchanie, teraz ciaśniej spięta z kolekcją.</h2>
             <p>To nie jest tracker dla samego trackingu. Aplikacja pomaga pamiętać, co grało, ile trwało, która igła zbiera godziny i jak cały zestaw pracuje w czasie.</p>
-            <p>Ekran kolekcji jest tylko częścią historii: każdy odsłuch łączy album, tor audio i realny przebieg igły, dzięki czemu po czasie widać nie tylko listę płyt, ale też rytm słuchania.</p>
+            <p>Wersja 1.5.1 poprawia codzienne krawędzie: import Discogs omija niewinylowy bałagan, usuwanie płyty sprząta lokalne powiązania, a dane demo nie wracają po pierwszej konfiguracji.</p>
             <div class="story-notes" aria-label="Co zapamiętuje aplikacja">
               <article>
-                <strong>Kontekst sesji</strong>
-                <span>Płyta, data, timer i aktywny zestaw odsłuchowy.</span>
+                <strong>Kontekst winyla</strong>
+                <span>Pozycje Discogs, tracklisty i importowane wydania trzymają się prawdziwych płyt.</span>
               </article>
               <article>
-                <strong>Godziny igły</strong>
-                <span>Przebieg liczony dla konkretnej igły, a nie całego toru.</span>
+                <strong>Ostrożne porządki</strong>
+                <span>Usunięcie płyty usuwa też odsłuchy, czyszczenia i ślady rozpoznania.</span>
               </article>
               <article>
-                <strong>Pamięć odsłuchu</strong>
-                <span>Historia, statystyki i eksport są gotowe, gdy kolekcja rośnie.</span>
+                <strong>Tor audio</strong>
+                <span>Gramofon, wkładka, igła, wzmacniacz i kolumny tworzą lokalny paszport.</span>
               </article>
             </div>
             <ul class="check-list">
-              <li>PL/EN od pierwszej wersji</li>
+              <li>Rozpoznawanie winyla z Teraz Gra</li>
+              <li>Import Discogs z tracklistami</li>
+              <li>Warsztat Marka i narzędzia opieki</li>
               <li>Backup i eksport danych</li>
-              <li>Live Activity i widget odsłuchu</li>
-              <li>Discogs przygotowany pod integrację</li>
             </ul>
           </div>
         </div>
@@ -192,7 +224,7 @@
         <img src="../assets/brand/app-icon.png" alt="" width="48" height="48">
         <div>
           <strong>Igła i Rowek</strong>
-          <p>Igła w rowek. Płyta gra. Historia zostaje.</p>
+          <p>Wersja 1.5.1. Igła w rowek. Płyta gra. Historia zostaje.</p>
         </div>
       </div>
       <nav class="footer-links" aria-label="Linki końcowe">

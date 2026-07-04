@@ -413,6 +413,7 @@ h3 {
 
 .section-header p,
 .feature-card p,
+.release-card p,
 .story-copy p,
 .screen-card p,
 .privacy-panel p,
@@ -456,6 +457,45 @@ h3 {
 
 .feature-card h3 {
   font-size: 1.22rem;
+}
+
+.release-band {
+  position: relative;
+}
+
+.release-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.release-card {
+  min-height: 14rem;
+  padding: 1.15rem;
+  border: 1px solid rgba(232, 221, 174, 0.18);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at top left, rgba(199, 145, 69, 0.17), transparent 46%),
+    linear-gradient(180deg, rgba(32, 27, 18, 0.95), rgba(13, 89, 95, 0.16));
+  box-shadow: inset 0 1px 0 rgba(255, 247, 210, 0.05);
+}
+
+.release-card span {
+  display: inline-flex;
+  margin-bottom: 0.85rem;
+  padding: 0.32rem 0.5rem;
+  border: 1px solid rgba(199, 145, 69, 0.3);
+  border-radius: 999px;
+  color: var(--brass-strong);
+  background: rgba(199, 145, 69, 0.08);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.release-card h3 {
+  margin-bottom: 0.55rem;
+  font-size: 1.18rem;
 }
 
 .story {
@@ -693,6 +733,7 @@ h3 {
 
   .ritual-strip,
   .feature-grid,
+  .release-grid,
   .story,
   .privacy-panel,
   .footer {
