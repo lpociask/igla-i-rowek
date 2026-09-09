@@ -3,236 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Igla i Rowek - analog listening journal</title>
-  <meta name="description" content="Igla i Rowek 1.5.1 is a local-first iPhone app for vinyl recognition, Discogs imports, record collections, audio gear, stylus usage and listening stats.">
-  <link rel="icon" href="assets/brand/app-icon.png">
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="refresh" content="0; url=https://lpociask.dev/en/apps/igla/">
+  <link rel="canonical" href="https://lpociask.dev/en/apps/igla/">
+  <meta name="description" content="Igła i Rowek — lpociask.dev">
+  <title>Igła i Rowek — lpociask.dev</title>
+  <style>
+    :root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:#193c2c; background:#faf7ef; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; display:grid; place-items:center; padding:24px; }
+    main { width:min(100%,540px); padding:clamp(24px,6vw,48px); border:1px solid #d4decc; border-radius:28px; background:#fffdf7; }
+    h1 { font-size:40px; line-height:1.1; letter-spacing:-.04em; margin:0 0 22px; }
+    p { font-size:17px; line-height:1.6; margin:0 0 20px; }
+    a { color:#245d3f; text-underline-offset:4px; }
+    a:focus-visible { outline:3px solid #245d3f; outline-offset:5px; }
+    .destination { display:inline-block; font-weight:750; margin-bottom:20px; }
+    nav { border-top:1px solid #d4decc; padding-top:20px; display:flex; flex-wrap:wrap; gap:12px 22px; font-size:14px; }
+  </style>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand-link" href="index.html" aria-label="Igla i Rowek home">
-        <img src="assets/brand/app-icon.png" alt="" width="40" height="40">
-        <span>Igla i Rowek</span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a aria-current="page" href="index.html">Home</a>
-        <a href="#whats-new">What's new</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-        <a class="language" href="pl/">PL</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true">
-          <figure class="phone phone-main">
-            <img src="assets/screenshots/en/screen-01.jpg" alt="" width="554" height="1200" fetchpriority="high">
-          </figure>
-          <figure class="phone phone-secondary">
-            <img src="assets/screenshots/en/screen-04.jpg" alt="" width="554" height="1200">
-          </figure>
-          <figure class="phone phone-third">
-            <img src="assets/screenshots/en/screen-06.jpg" alt="" width="554" height="1200">
-          </figure>
-        </div>
-        <div class="hero-copy">
-          <p class="release-note">Version 1.5.1 for iPhone</p>
-          <h1 id="hero-title">Igla i Rowek</h1>
-          <p class="lead">An analog listening journal for people who want to know what record is playing, import vinyl cleanly from Discogs, care for the whole audio chain and keep stylus hours honest.</p>
-          <div class="actions">
-            <a class="button primary" href="https://apps.apple.com/us/app/ig%C5%82a-i-rowek/id6782431440">Download on the App Store</a>
-            <a class="button secondary" href="#whats-new">What's new</a>
-            <a class="button secondary" href="#screens">See screens</a>
-          </div>
-          <figure class="hero-marek">
-            <img src="assets/brand/marek-hero-brand.jpg" alt="Marek by a turntable" width="1400" height="788">
-            <figcaption>
-              <strong>Marek is the analog host of the app.</strong>
-              <span>He keeps the tone warm while the app keeps records, styli, speakers, Discogs imports and sessions in order.</span>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="ritual-strip" aria-label="Core app areas">
-        <article class="ritual-card">
-          <img src="assets/screenshots/en/screen-01.jpg" alt="" width="553" height="1200" loading="lazy">
-          <div>
-            <span class="ritual-number">01</span>
-            <h3>Now Playing</h3>
-            <p>Choose a record, start the timer or use optional vinyl recognition when music is nearby.</p>
-          </div>
-        </article>
-        <article class="ritual-card">
-          <img src="assets/screenshots/en/screen-04.jpg" alt="" width="553" height="1200" loading="lazy">
-          <div>
-            <span class="ritual-number">02</span>
-            <h3>Collection</h3>
-            <p>A local record shelf with cleaner Discogs vinyl imports and safer record cleanup.</p>
-          </div>
-        </article>
-        <article class="ritual-card">
-          <img src="assets/screenshots/en/screen-05.jpg" alt="" width="553" height="1200" loading="lazy">
-          <div>
-            <span class="ritual-number">03</span>
-            <h3>Gear</h3>
-            <p>Turntables, cartridges, styli, amplifiers and speakers stay in one audio passport.</p>
-          </div>
-        </article>
-        <article class="ritual-card">
-          <img src="assets/screenshots/en/screen-08.jpg" alt="" width="553" height="1200" loading="lazy">
-          <div>
-            <span class="ritual-number">04</span>
-            <h3>Marek's Workshop</h3>
-            <p>Care tools, cleaning notes and maintenance context live next to listening history.</p>
-          </div>
-        </article>
-      </section>
-
-      <section class="band alt release-band" id="whats-new">
-        <div class="section-header">
-          <p class="eyebrow">What's new in 1.5.1</p>
-          <h2>Cleaner imports, safer collection maintenance and calmer local data.</h2>
-          <p>This update tightens the version 1.5 foundation: Discogs now focuses on vinyl, collection cleanup is safer, and the app is better behaved after first setup.</p>
-        </div>
-        <div class="release-grid" aria-label="Version 1.5.1 highlights">
-          <article class="release-card">
-            <span>Discogs</span>
-            <h3>Vinyl-only imports</h3>
-            <p>Non-vinyl entries are skipped and counted, so your local collection stays focused on records.</p>
-          </article>
-          <article class="release-card">
-            <span>Tracklists</span>
-            <h3>Cleaner fetching</h3>
-            <p>Discogs tracklists are requested only for imported vinyl releases, keeping batch import more predictable.</p>
-          </article>
-          <article class="release-card">
-            <span>Collection</span>
-            <h3>Safe record removal</h3>
-            <p>Removing a record also cleans related listens, care logs and recognition history.</p>
-          </article>
-          <article class="release-card">
-            <span>Local-first</span>
-            <h3>Setup polish</h3>
-            <p>Demo data is seeded only once, with small stability and Polish/English copy improvements.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="band" id="what">
-        <div class="section-header">
-          <p class="eyebrow">What it does</p>
-          <h2>It connects the record, the audio chain and real stylus wear.</h2>
-          <p>Igla i Rowek is local-first: no account, no pressure, no social noise. It is a tool for the daily ritual of playing records, recognising what is nearby and caring for an analog setup.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <img src="assets/brand/marek-hero-brand.jpg" alt="Marek illustration by a turntable">
-            <h3>Listening as a ritual</h3>
-            <p>Pick a record, the active stylus and your listening chain. The timer handles the session, then saves it to history.</p>
-          </article>
-          <article class="feature-card">
-            <img src="assets/brand/marek-hero-gear.jpg" alt="Audio gear illustration in the app style">
-            <h3>Gear passport</h3>
-            <p>Turntables, cartridges and individual styli are tracked separately, because a stylus wears faster than the rest of the system.</p>
-          </article>
-          <article class="feature-card">
-            <img src="assets/brand/marek-hero-analytics.jpg" alt="Listening stats illustration">
-            <h3>Insight without spreadsheet pain</h3>
-            <p>Stats show listening time, session count, most-played records and the styli getting the most hours.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="band alt">
-        <div class="story">
-          <div class="story-visual">
-            <img src="assets/screenshots/en/screen-03.jpg" alt="App screen showing listening and collection context" width="554" height="1200" loading="lazy">
-          </div>
-          <div class="story-copy">
-            <p class="eyebrow">Version 1.5.1</p>
-            <h2>A serious base for serious listening, now tighter around the collection.</h2>
-            <p>This is not tracking for tracking's sake. The app helps remember what played, how long it ran, which stylus collected the hours and how the whole setup changes over time.</p>
-            <p>Version 1.5.1 improves the everyday edge cases: Discogs imports avoid non-vinyl clutter, record removal cleans linked local history, and first-run demo data stays under control.</p>
-            <div class="story-notes" aria-label="What the app remembers">
-              <article>
-                <strong>Vinyl context</strong>
-                <span>Discogs entries, tracklists and imported releases stay tied to real records.</span>
-              </article>
-              <article>
-                <strong>Careful cleanup</strong>
-                <span>Deleting a record also removes its listens, care logs and recognition traces.</span>
-              </article>
-              <article>
-                <strong>Audio chain</strong>
-                <span>Turntable, cartridge, stylus, amplifier and speakers form one local passport.</span>
-              </article>
-            </div>
-            <ul class="check-list">
-              <li>Vinyl recognition from Now Playing</li>
-              <li>Discogs imports with tracklists</li>
-              <li>Marek's Workshop care tools</li>
-              <li>Backup and data export</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="band" id="screens">
-        <div class="section-header">
-          <p class="eyebrow">Screens</p>
-          <h2>The whole analog day in one place.</h2>
-          <p>From session start to collection, gear and stats. Scroll horizontally through the screens.</p>
-        </div>
-        <div class="screen-rail" aria-label="App screenshots">
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-01.jpg" alt="Now Playing screen" width="554" height="1200" loading="lazy"></figure><h3>Now Playing</h3><p>Record, stylus and session timer.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-02.jpg" alt="App start screen" width="554" height="1200" loading="lazy"></figure><h3>Start</h3><p>A short way into the listening flow.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-03.jpg" alt="Active listening screen" width="554" height="1200" loading="lazy"></figure><h3>Sessions</h3><p>Listening history and stylus time.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-04.jpg" alt="Record collection screen" width="554" height="1200" loading="lazy"></figure><h3>Collection</h3><p>A local record library.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-05.jpg" alt="Audio gear screen" width="554" height="1200" loading="lazy"></figure><h3>Gear</h3><p>Listening chains, cartridges and styli.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-06.jpg" alt="Stats screen" width="554" height="1200" loading="lazy"></figure><h3>Stats</h3><p>Insight from actual listening.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-07.jpg" alt="More and settings screen" width="554" height="1200" loading="lazy"></figure><h3>More</h3><p>Backup, language and app support.</p></article>
-          <article class="screen-card"><figure><img src="assets/screenshots/en/screen-08.jpg" alt="Analog guardian screen" width="554" height="1200" loading="lazy"></figure><h3>Marek</h3><p>The local analog guardian.</p></article>
-        </div>
-      </section>
-
-      <section class="band alt" id="privacy">
-        <div class="section-header">
-          <p class="eyebrow">Privacy and support</p>
-          <h2>The App Store essentials live here too.</h2>
-          <p>This site is also the official home for privacy and support information. The original URLs stay in place for App Store Connect.</p>
-        </div>
-        <div class="privacy-panel">
-          <article>
-            <h3>Privacy Policy</h3>
-            <p>Your collection, listening sessions and gear history are designed to stay on your device.</p>
-            <a class="text-link" href="privacy.html">Read privacy policy</a>
-          </article>
-          <article>
-            <h3>Support</h3>
-            <p>For feedback, support requests or App Store review questions, use the support page.</p>
-            <a class="text-link" href="support.html">Open support</a>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-mark">
-        <img src="assets/brand/app-icon.png" alt="" width="48" height="48">
-        <div>
-          <strong>Igla i Rowek</strong>
-          <p>Version 1.5.1. Needle in the groove. Record playing. History saved.</p>
-        </div>
-      </div>
-      <nav class="footer-links" aria-label="Footer links">
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-        <a href="pl/">Polski</a>
-      </nav>
-    </footer>
-  </div>
+  <main>
+    <h1>Igła i Rowek</h1>
+    <p>The app website has moved to <strong>lpociask.dev</strong>.</p>
+    <a class="destination" href="https://lpociask.dev/en/apps/igla/">Visit the app website →</a>
+    <nav aria-label="Useful links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="https://lpociask.dev/apps/igla/" hreflang="pl">Polski</a></nav>
+  </main>
 </body>
 </html>
